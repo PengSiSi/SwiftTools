@@ -14,6 +14,11 @@
 		F187BEE21EB9AEAA00BCFF51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F187BEE01EB9AEAA00BCFF51 /* LaunchScreen.storyboard */; };
 		F187BEED1EB9AEAB00BCFF51 /* SwiftToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BEEC1EB9AEAB00BCFF51 /* SwiftToolsTests.swift */; };
 		F187BEF81EB9AEAB00BCFF51 /* SwiftToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BEF71EB9AEAB00BCFF51 /* SwiftToolsUITests.swift */; };
+		F187BF0A1EB9B09B00BCFF51 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF091EB9B09B00BCFF51 /* UIView+Frame.swift */; };
+		F187BF0F1EB9B6BD00BCFF51 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF0E1EB9B6BD00BCFF51 /* AlertView.swift */; };
+		F187BF121EB9C0C700BCFF51 /* RequestFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF111EB9C0C700BCFF51 /* RequestFailedView.swift */; };
+		F187BF141EB9C32200BCFF51 /* UtilsMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF131EB9C32200BCFF51 /* UtilsMacro.swift */; };
+		F187BF161EB9D34F00BCFF51 /* UIColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF151EB9D34F00BCFF51 /* UIColor+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F187BEF31EB9AEAB00BCFF51 /* SwiftToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F187BEF71EB9AEAB00BCFF51 /* SwiftToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftToolsUITests.swift; sourceTree = "<group>"; };
 		F187BEF91EB9AEAB00BCFF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F187BF091EB9B09B00BCFF51 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		F187BF0E1EB9B6BD00BCFF51 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		F187BF111EB9C0C700BCFF51 /* RequestFailedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFailedView.swift; sourceTree = "<group>"; };
+		F187BF131EB9C32200BCFF51 /* UtilsMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsMacro.swift; sourceTree = "<group>"; };
+		F187BF151EB9D34F00BCFF51 /* UIColor+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,8 @@
 		F187BF061EB9AF1F00BCFF51 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				F187BF091EB9B09B00BCFF51 /* UIView+Frame.swift */,
+				F187BF151EB9D34F00BCFF51 /* UIColor+Color.swift */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -146,6 +158,7 @@
 		F187BF071EB9AF1F00BCFF51 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				F187BF131EB9C32200BCFF51 /* UtilsMacro.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -153,8 +166,26 @@
 		F187BF081EB9AF1F00BCFF51 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F187BF101EB9C09800BCFF51 /* RequestFailedView */,
+				F187BF0B1EB9B69100BCFF51 /* AlertView */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		F187BF0B1EB9B69100BCFF51 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F187BF0E1EB9B6BD00BCFF51 /* AlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		F187BF101EB9C09800BCFF51 /* RequestFailedView */ = {
+			isa = PBXGroup;
+			children = (
+				F187BF111EB9C0C700BCFF51 /* RequestFailedView.swift */,
+			);
+			path = RequestFailedView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F187BF161EB9D34F00BCFF51 /* UIColor+Color.swift in Sources */,
 				F187BEDA1EB9AEAA00BCFF51 /* ViewController.swift in Sources */,
+				F187BF121EB9C0C700BCFF51 /* RequestFailedView.swift in Sources */,
+				F187BF0F1EB9B6BD00BCFF51 /* AlertView.swift in Sources */,
 				F187BED81EB9AEAA00BCFF51 /* AppDelegate.swift in Sources */,
+				F187BF141EB9C32200BCFF51 /* UtilsMacro.swift in Sources */,
+				F187BF0A1EB9B09B00BCFF51 /* UIView+Frame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
