@@ -29,6 +29,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 4. 快速设置颜色
+//        view.backgroundColor = UIColor(255, 0, 0, 0.9)
+        
+        // 5. 获取随机颜色
+        view.backgroundColor = UIColor.randomColor()
+        
         // 1.UIView+Frame
         let myView1 = UIView(frame: CGRect(x: 100, y: 50, width: 30, height: 40))
         myView1.backgroundColor = UIColor.green
