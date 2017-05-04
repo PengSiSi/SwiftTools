@@ -27,13 +27,15 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         titleArray = ["1.UIView+FrameDemo",
                       "2.AlertViewDemo",
                       "3.RequestFailedViewDemo",
-                      "4.PageViewControllerDemo"
+                      "4.PageViewControllerDemo",
+                      "5.HttpToolViewControllerDemo"
                      ]
         classVcArray = [
                       "FrameViewController",
                       "AlertViewController",
                       "RequestFailViewController",
-                      "PageViewController"
+                      "PageViewController",
+                      "HttpToolViewController"
                        ]
     }
     

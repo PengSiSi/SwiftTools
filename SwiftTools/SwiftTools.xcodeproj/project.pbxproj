@@ -35,6 +35,7 @@
 		F1EAF7D01EBAD5B600DE5D22 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7CF1EBAD5B600DE5D22 /* NSDate+Extension.swift */; };
 		F1EAF7D21EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */; };
 		F1EAF7D61EBADD1500DE5D22 /* HTTPTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */; };
+		F1EAF7DC1EBB166000DE5D22 /* HttpToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7DB1EBB166000DE5D22 /* HttpToolViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		F1EAF7CF1EBAD5B600DE5D22 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTool.swift; sourceTree = "<group>"; };
+		F1EAF7DB1EBB166000DE5D22 /* HttpToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpToolViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 		F1EAF7B51EBACB0F00DE5D22 /* SectionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAF7DA1EBB165300DE5D22 /* 5.HTTPToolDemo */,
 				F1EAF7B61EBACB3B00DE5D22 /* 1.UIView+FrameDemo */,
 				F1EAF7B71EBACB9600DE5D22 /* 2.AlertViewDemo */,
 				F1EAF7B81EBACB9600DE5D22 /* 3.RequestFailedViewDemo */,
@@ -319,6 +322,14 @@
 				F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */,
 			);
 			path = HTTPTool;
+			sourceTree = "<group>";
+		};
+		F1EAF7DA1EBB165300DE5D22 /* 5.HTTPToolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7DB1EBB166000DE5D22 /* HttpToolViewController.swift */,
+			);
+			path = 5.HTTPToolDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +524,7 @@
 				F1EAF7C81EBAD3EC00DE5D22 /* ViewController2.swift in Sources */,
 				F1EAF7C41EBACC6500DE5D22 /* PageViewController.swift in Sources */,
 				F1EAF7CA1EBAD3F200DE5D22 /* ViewController3.swift in Sources */,
+				F1EAF7DC1EBB166000DE5D22 /* HttpToolViewController.swift in Sources */,
 				F1EAF7D01EBAD5B600DE5D22 /* NSDate+Extension.swift in Sources */,
 				F187BF161EB9D34F00BCFF51 /* UIColor+Color.swift in Sources */,
 				F1EAF7BE1EBACBE600DE5D22 /* BaseViewController.swift in Sources */,

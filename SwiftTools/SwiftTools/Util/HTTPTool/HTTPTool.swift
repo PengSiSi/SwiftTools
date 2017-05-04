@@ -4,7 +4,8 @@
 //
 //  Created by 思 彭 on 2017/5/4.
 //  Copyright © 2017年 思 彭. All rights reserved.
-//
+
+// 
 
 import UIKit
 import Foundation
@@ -109,8 +110,13 @@ extension HTTPTool {
     }
     
     //MARK: 文件下载
+    
+    ///   - URLString: 服务器url
+    ///   - fileName: 文件名
+    ///   - filePath: 文件路径
+    
     func downLoadFileRequest(URLString: String, fileName: String, filePath: String) {
-        
+        /*
         let fileManager = FileManager.default
         let docPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as NSString
         let aFilePath = docPath.appendingPathComponent(filePath)
@@ -125,5 +131,24 @@ extension HTTPTool {
 //                Alamofire.download(URLString, to: aFileNamePath)
             }
         }
+ */
+        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+            let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let fileURL = documentsURL.appendingPathComponent(filePath)
+            let aFilePath = fileURL.appendingPathComponent(fileName)
+            //两个参数表示如果有同名文件则会覆盖，如果路径中文件夹不存在则会自动创建
+            return (aFilePath, [.removePreviousFile, .createIntermediateDirectories])
+        }
+        print(destination)
+        //开始下载
+        Alamofire.download(URLString, to: destination)
+            .response { response in
+                print(response)
+                
+                if let data = response.request?.value {
+                    print("下载完毕!")
+                    print(data)
+                }
+         }
     }
 }
