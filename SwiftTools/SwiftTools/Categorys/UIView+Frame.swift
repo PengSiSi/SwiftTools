@@ -145,6 +145,26 @@ extension UIView {
         }
     }
     
+    // bottomLeft
+    
+    public var bottomLeft: CGPoint{
+        get{
+            let x = self.frame.origin.x
+            let y = self.frame.origin.y + self.frame.size.height
+            return CGPoint.init(x: x, y: y)
+        }
+    }
+    
+    // bottomRight
+    
+    public var bottomRight: CGPoint{
+        get{
+            let x = self.frame.origin.x + self.frame.size.width
+            let y = self.frame.origin.y + self.frame.size.height
+            return CGPoint.init(x: x, y: y)
+        }
+    }
+
     // right
     var right: CGFloat {
         get {
@@ -157,4 +177,14 @@ extension UIView {
             self.frame = newFrame;
         }
     }
+    
+    // topRight
+    public var topRight: CGPoint{
+        get{
+            let x = self.frame.origin.x + self.frame.size.width
+            let y = self.frame.origin.y
+            return CGPoint.init(x: x, y: y)
+        }
+    }
+
 }

@@ -147,6 +147,7 @@ extension HTTPTool {
                 
                 if let data = response.request?.value {
                     print("下载完毕!")
+                    // 下载路径: file:///Users/sipeng/Library/Developer/CoreSimulator/Devices/59E51096-9523-4845-84E8-2BB5360FB50E/data/Containers/Data/Application/4610B75F-E375-4B53-BA81-58B056745AE7/Documents/sisi/logo.png
                     print(data)
                 }
          }

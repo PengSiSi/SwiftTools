@@ -36,6 +36,7 @@
 		F1EAF7D21EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */; };
 		F1EAF7D61EBADD1500DE5D22 /* HTTPTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */; };
 		F1EAF7DC1EBB166000DE5D22 /* HttpToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7DB1EBB166000DE5D22 /* HttpToolViewController.swift */; };
+		F1EAF7E01EBB234700DE5D22 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7DF1EBB234700DE5D22 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTool.swift; sourceTree = "<group>"; };
 		F1EAF7DB1EBB166000DE5D22 /* HttpToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpToolViewController.swift; sourceTree = "<group>"; };
+		F1EAF7DF1EBB234700DE5D22 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				F187BF091EB9B09B00BCFF51 /* UIView+Frame.swift */,
+				F1EAF7DF1EBB234700DE5D22 /* UIImage+Extension.swift */,
 				F187BF151EB9D34F00BCFF51 /* UIColor+Color.swift */,
 				F1EAF7CF1EBAD5B600DE5D22 /* NSDate+Extension.swift */,
 				F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */,
@@ -523,6 +526,7 @@
 				F1EAF7BC1EBACBDC00DE5D22 /* FrameViewController.swift in Sources */,
 				F1EAF7C81EBAD3EC00DE5D22 /* ViewController2.swift in Sources */,
 				F1EAF7C41EBACC6500DE5D22 /* PageViewController.swift in Sources */,
+				F1EAF7E01EBB234700DE5D22 /* UIImage+Extension.swift in Sources */,
 				F1EAF7CA1EBAD3F200DE5D22 /* ViewController3.swift in Sources */,
 				F1EAF7DC1EBB166000DE5D22 /* HttpToolViewController.swift in Sources */,
 				F1EAF7D01EBAD5B600DE5D22 /* NSDate+Extension.swift in Sources */,
