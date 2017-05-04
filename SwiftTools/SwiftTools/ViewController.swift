@@ -9,65 +9,108 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
-    // 懒加载
-    
-    fileprivate lazy var failedView: RequestFailedView = {
-       
-        let failedView = RequestFailedView.show()
-        failedView.frame = CGRect(x: 0, y: 0, width: k_ScreenWidth, height: k_ScreenHeight)
-        failedView.imgName = "cry"
-        failedView.reloadBtnClosure = {() -> Void in
-            
-            print("重新加载...")
-            failedView.removeFromSuperview()
-        }
-        return failedView
-    }()
+    lazy var tableView = UITableView()
+    var titleArray: [String]? = nil
+    var classVcArray: [String]? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "SwiftDemo"
+        configureData()
+        setupTableView()
+   }
+    
+    func configureData() {
         
-        // 4. 快速设置颜色
-//        view.backgroundColor = UIColor(255, 0, 0, 0.9)
-        
-        // 5. 获取随机颜色
-        view.backgroundColor = UIColor.randomColor()
-        
-        // 1.UIView+Frame
-        let myView1 = UIView(frame: CGRect(x: 100, y: 50, width: 30, height: 40))
-        myView1.backgroundColor = UIColor.green
-        view.addSubview(myView1)
-        
-        let myView2 = UIView()
-        myView2.frame = CGRect(x: myView1.x, y: myView1.bottom + 10, width: myView1.width + 20, height: myView1.height - 30)
-        myView2.backgroundColor = UIColor.orange
-        view.addSubview(myView2)
-        
-        // 2.AlertView
-        
-        let btn = UIButton(type: .custom)
-        btn.frame = CGRect(x: myView2.left, y: myView2.bottom + 10, width: 100, height: 40)
-        btn.setTitle("弹出alertView", for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        btn.backgroundColor = UIColor.red
-        btn.addTarget(self, action: #selector(showAlertView), for: .touchUpInside)
-        view.addSubview(btn)
+        titleArray = ["1.UIView+FrameDemo",
+                      "2.AlertViewDemo",
+                      "3.RequestFailedViewDemo",
+                      "4.PageViewControllerDemo"
+                     ]
+        classVcArray = [
+                      "FrameViewController",
+                      "AlertViewController",
+                      "RequestFailViewController",
+                      "PageViewController"
+                       ]
     }
     
-    func showAlertView() {
+    func setupTableView() {
         
-        AlertView.showAlertView(vc: self, title: "提示", messgae: "看到消息了么?", cancleStr: "取消", sureStr: "确定", cancleButtonClickClosure: {
-            print("取消...")
-        }) { 
-            print("确定...")
-        }
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.frame = self.view.bounds
+        self.view.addSubview(tableView)
     }
+}
 
-    // 3. RequestFailedView
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.addSubview(self.failedView)
+// MARK: UITableViewDelegate && UITableViewDataSource
+
+extension ViewController {
+    
+    // 组数
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1;
+    }
+    // 行数
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return titleArray!.count
+    }
+    // 创建cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell()
+        cell.selectionStyle = .none
+        let text = titleArray![indexPath.row]
+        cell.textLabel?.text = text
+        cell.textLabel?.textColor = UIColor.red
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 15)
+        return cell
+    }
+    // 行数
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 44
+    }
+    // 点击单元格
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let classVc: UIViewController = getViewController(classVcArray![indexPath.row])!
+        self.navigationController?.pushViewController(classVc, animated: true)
+    }
+}
+
+extension ViewController {
+    
+    /// 类文件字符串转换为ViewController
+    ///
+    /// - Parameter childControllerName: VC的字符串
+    /// - Returns: ViewController
+    
+    func getViewController(_ childControllerName: String) -> UIViewController?{
+        
+        // 1.获取命名空间
+        // 通过字典的键来取值,如果键名不存在,那么取出来的值有可能就为没值.所以通过字典取出的值的类型为AnyObject?
+        guard let clsName = Bundle.main.infoDictionary!["CFBundleExecutable"] else {
+            print("命名空间不存在")
+            return nil
+        }
+        // 2.通过命名空间和类名转换成类
+        let cls : AnyClass? = NSClassFromString((clsName as! String) + "." + childControllerName)
+        
+        // swift 中通过Class创建一个对象,必须告诉系统Class的类型
+        guard let clsType = cls as? UIViewController.Type else {
+            print("无法转换成UIViewController")
+            return nil
+        }
+        // 3.通过Class创建对象
+        let childController = clsType.init()
+        
+        return childController
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102D1ED2E017DB87A563ECDC /* Pods_SwiftTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B66BD42FD3E17D73ACCBC21 /* Pods_SwiftTools.framework */; };
 		F187BED81EB9AEAA00BCFF51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BED71EB9AEAA00BCFF51 /* AppDelegate.swift */; };
 		F187BEDA1EB9AEAA00BCFF51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BED91EB9AEAA00BCFF51 /* ViewController.swift */; };
 		F187BEDD1EB9AEAA00BCFF51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F187BEDB1EB9AEAA00BCFF51 /* Main.storyboard */; };
@@ -19,6 +20,21 @@
 		F187BF121EB9C0C700BCFF51 /* RequestFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF111EB9C0C700BCFF51 /* RequestFailedView.swift */; };
 		F187BF141EB9C32200BCFF51 /* UtilsMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF131EB9C32200BCFF51 /* UtilsMacro.swift */; };
 		F187BF161EB9D34F00BCFF51 /* UIColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187BF151EB9D34F00BCFF51 /* UIColor+Color.swift */; };
+		F1EAF7B31EBACA5B00DE5D22 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7B11EBACA5B00DE5D22 /* PageContentView.swift */; };
+		F1EAF7B41EBACA5B00DE5D22 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7B21EBACA5B00DE5D22 /* PageTitleView.swift */; };
+		F1EAF7BC1EBACBDC00DE5D22 /* FrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7BB1EBACBDC00DE5D22 /* FrameViewController.swift */; };
+		F1EAF7BE1EBACBE600DE5D22 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7BD1EBACBE600DE5D22 /* BaseViewController.swift */; };
+		F1EAF7C01EBACC4A00DE5D22 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7BF1EBACC4A00DE5D22 /* AlertViewController.swift */; };
+		F1EAF7C21EBACC5700DE5D22 /* RequestFailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7C11EBACC5700DE5D22 /* RequestFailViewController.swift */; };
+		F1EAF7C41EBACC6500DE5D22 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7C31EBACC6500DE5D22 /* PageViewController.swift */; };
+		F1EAF7C61EBAD3E600DE5D22 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7C51EBAD3E600DE5D22 /* ViewController1.swift */; };
+		F1EAF7C81EBAD3EC00DE5D22 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7C71EBAD3EC00DE5D22 /* ViewController2.swift */; };
+		F1EAF7CA1EBAD3F200DE5D22 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7C91EBAD3F200DE5D22 /* ViewController3.swift */; };
+		F1EAF7CC1EBAD3F900DE5D22 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7CB1EBAD3F900DE5D22 /* ViewController4.swift */; };
+		F1EAF7CE1EBAD41100DE5D22 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7CD1EBAD41100DE5D22 /* ViewController5.swift */; };
+		F1EAF7D01EBAD5B600DE5D22 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7CF1EBAD5B600DE5D22 /* NSDate+Extension.swift */; };
+		F1EAF7D21EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */; };
+		F1EAF7D61EBADD1500DE5D22 /* HTTPTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B66BD42FD3E17D73ACCBC21 /* Pods_SwiftTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCC46498B0BA0C4CD8D783E /* Pods-SwiftTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTools/Pods-SwiftTools.debug.xcconfig"; sourceTree = "<group>"; };
+		C868035C2424B0DA19159976 /* Pods-SwiftTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTools/Pods-SwiftTools.release.xcconfig"; sourceTree = "<group>"; };
 		F187BED41EB9AEAA00BCFF51 /* SwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F187BED71EB9AEAA00BCFF51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F187BED91EB9AEAA00BCFF51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +76,21 @@
 		F187BF111EB9C0C700BCFF51 /* RequestFailedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFailedView.swift; sourceTree = "<group>"; };
 		F187BF131EB9C32200BCFF51 /* UtilsMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsMacro.swift; sourceTree = "<group>"; };
 		F187BF151EB9D34F00BCFF51 /* UIColor+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Color.swift"; sourceTree = "<group>"; };
+		F1EAF7B11EBACA5B00DE5D22 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		F1EAF7B21EBACA5B00DE5D22 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		F1EAF7BB1EBACBDC00DE5D22 /* FrameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameViewController.swift; sourceTree = "<group>"; };
+		F1EAF7BD1EBACBE600DE5D22 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F1EAF7BF1EBACC4A00DE5D22 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		F1EAF7C11EBACC5700DE5D22 /* RequestFailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFailViewController.swift; sourceTree = "<group>"; };
+		F1EAF7C31EBACC6500DE5D22 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F1EAF7C51EBAD3E600DE5D22 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		F1EAF7C71EBAD3EC00DE5D22 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F1EAF7C91EBAD3F200DE5D22 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		F1EAF7CB1EBAD3F900DE5D22 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		F1EAF7CD1EBAD41100DE5D22 /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		F1EAF7CF1EBAD5B600DE5D22 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102D1ED2E017DB87A563ECDC /* Pods_SwiftTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +119,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36E6AB0A151FEBDA2963E05A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC46498B0BA0C4CD8D783E /* Pods-SwiftTools.debug.xcconfig */,
+				C868035C2424B0DA19159976 /* Pods-SwiftTools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E04DEBA165BE90E04DB68A31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B66BD42FD3E17D73ACCBC21 /* Pods_SwiftTools.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F187BECB1EB9AEAA00BCFF51 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +143,8 @@
 				F187BEEB1EB9AEAB00BCFF51 /* SwiftToolsTests */,
 				F187BEF61EB9AEAB00BCFF51 /* SwiftToolsUITests */,
 				F187BED51EB9AEAA00BCFF51 /* Products */,
+				36E6AB0A151FEBDA2963E05A /* Pods */,
+				E04DEBA165BE90E04DB68A31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +169,8 @@
 				F187BEE31EB9AEAA00BCFF51 /* Info.plist */,
 				F187BF051EB9AF1F00BCFF51 /* Base */,
 				F187BF061EB9AF1F00BCFF51 /* Categorys */,
+				F1EAF7B51EBACB0F00DE5D22 /* SectionDemo */,
+				F1EAF7D31EBADBCA00DE5D22 /* Vendors */,
 				F187BF071EB9AF1F00BCFF51 /* Macro */,
 				F187BF081EB9AF1F00BCFF51 /* Util */,
 			);
@@ -142,6 +198,7 @@
 		F187BF051EB9AF1F00BCFF51 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAF7BD1EBACBE600DE5D22 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -151,6 +208,8 @@
 			children = (
 				F187BF091EB9B09B00BCFF51 /* UIView+Frame.swift */,
 				F187BF151EB9D34F00BCFF51 /* UIColor+Color.swift */,
+				F1EAF7CF1EBAD5B600DE5D22 /* NSDate+Extension.swift */,
+				F1EAF7D11EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -166,6 +225,8 @@
 		F187BF081EB9AF1F00BCFF51 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F1EAF7D41EBADD0100DE5D22 /* HTTPTool */,
+				F1EAF7B01EBACA5B00DE5D22 /* PageViewController */,
 				F187BF101EB9C09800BCFF51 /* RequestFailedView */,
 				F187BF0B1EB9B69100BCFF51 /* AlertView */,
 			);
@@ -188,6 +249,78 @@
 			path = RequestFailedView;
 			sourceTree = "<group>";
 		};
+		F1EAF7B01EBACA5B00DE5D22 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7B11EBACA5B00DE5D22 /* PageContentView.swift */,
+				F1EAF7B21EBACA5B00DE5D22 /* PageTitleView.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		F1EAF7B51EBACB0F00DE5D22 /* SectionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7B61EBACB3B00DE5D22 /* 1.UIView+FrameDemo */,
+				F1EAF7B71EBACB9600DE5D22 /* 2.AlertViewDemo */,
+				F1EAF7B81EBACB9600DE5D22 /* 3.RequestFailedViewDemo */,
+				F1EAF7B91EBACB9600DE5D22 /* 4.PageViewControllerDemo */,
+			);
+			path = SectionDemo;
+			sourceTree = "<group>";
+		};
+		F1EAF7B61EBACB3B00DE5D22 /* 1.UIView+FrameDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7BB1EBACBDC00DE5D22 /* FrameViewController.swift */,
+			);
+			path = "1.UIView+FrameDemo";
+			sourceTree = "<group>";
+		};
+		F1EAF7B71EBACB9600DE5D22 /* 2.AlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7BF1EBACC4A00DE5D22 /* AlertViewController.swift */,
+			);
+			path = 2.AlertViewDemo;
+			sourceTree = "<group>";
+		};
+		F1EAF7B81EBACB9600DE5D22 /* 3.RequestFailedViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7C11EBACC5700DE5D22 /* RequestFailViewController.swift */,
+			);
+			path = 3.RequestFailedViewDemo;
+			sourceTree = "<group>";
+		};
+		F1EAF7B91EBACB9600DE5D22 /* 4.PageViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7C31EBACC6500DE5D22 /* PageViewController.swift */,
+				F1EAF7C51EBAD3E600DE5D22 /* ViewController1.swift */,
+				F1EAF7C71EBAD3EC00DE5D22 /* ViewController2.swift */,
+				F1EAF7C91EBAD3F200DE5D22 /* ViewController3.swift */,
+				F1EAF7CB1EBAD3F900DE5D22 /* ViewController4.swift */,
+				F1EAF7CD1EBAD41100DE5D22 /* ViewController5.swift */,
+			);
+			path = 4.PageViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		F1EAF7D31EBADBCA00DE5D22 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		F1EAF7D41EBADD0100DE5D22 /* HTTPTool */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAF7D51EBADD1500DE5D22 /* HTTPTool.swift */,
+			);
+			path = HTTPTool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F187BEFC1EB9AEAB00BCFF51 /* Build configuration list for PBXNativeTarget "SwiftTools" */;
 			buildPhases = (
+				2A5E0E1BE766B0DB88349BF8 /* [CP] Check Pods Manifest.lock */,
 				F187BED01EB9AEAA00BCFF51 /* Sources */,
 				F187BED11EB9AEAA00BCFF51 /* Frameworks */,
 				F187BED21EB9AEAA00BCFF51 /* Resources */,
+				3FFB5D09449551BFE3E22674 /* [CP] Embed Pods Frameworks */,
+				79531902CBC93F20F5ECB694 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,18 +456,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A5E0E1BE766B0DB88349BF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3FFB5D09449551BFE3E22674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTools/Pods-SwiftTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79531902CBC93F20F5ECB694 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTools/Pods-SwiftTools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F187BED01EB9AEAA00BCFF51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EAF7BC1EBACBDC00DE5D22 /* FrameViewController.swift in Sources */,
+				F1EAF7C81EBAD3EC00DE5D22 /* ViewController2.swift in Sources */,
+				F1EAF7C41EBACC6500DE5D22 /* PageViewController.swift in Sources */,
+				F1EAF7CA1EBAD3F200DE5D22 /* ViewController3.swift in Sources */,
+				F1EAF7D01EBAD5B600DE5D22 /* NSDate+Extension.swift in Sources */,
 				F187BF161EB9D34F00BCFF51 /* UIColor+Color.swift in Sources */,
+				F1EAF7BE1EBACBE600DE5D22 /* BaseViewController.swift in Sources */,
 				F187BEDA1EB9AEAA00BCFF51 /* ViewController.swift in Sources */,
+				F1EAF7C21EBACC5700DE5D22 /* RequestFailViewController.swift in Sources */,
+				F1EAF7C61EBAD3E600DE5D22 /* ViewController1.swift in Sources */,
+				F1EAF7D21EBAD5C900DE5D22 /* UIBarButtonItem+Extension.swift in Sources */,
 				F187BF121EB9C0C700BCFF51 /* RequestFailedView.swift in Sources */,
+				F1EAF7B31EBACA5B00DE5D22 /* PageContentView.swift in Sources */,
 				F187BF0F1EB9B6BD00BCFF51 /* AlertView.swift in Sources */,
+				F1EAF7CE1EBAD41100DE5D22 /* ViewController5.swift in Sources */,
+				F1EAF7C01EBACC4A00DE5D22 /* AlertViewController.swift in Sources */,
+				F1EAF7CC1EBAD3F900DE5D22 /* ViewController4.swift in Sources */,
 				F187BED81EB9AEAA00BCFF51 /* AppDelegate.swift in Sources */,
+				F1EAF7B41EBACA5B00DE5D22 /* PageTitleView.swift in Sources */,
 				F187BF141EB9C32200BCFF51 /* UtilsMacro.swift in Sources */,
 				F187BF0A1EB9B09B00BCFF51 /* UIView+Frame.swift in Sources */,
+				F1EAF7D61EBADD1500DE5D22 /* HTTPTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +680,7 @@
 		};
 		F187BEFD1EB9AEAB00BCFF51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCC46498B0BA0C4CD8D783E /* Pods-SwiftTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 84VQ69YVDT;
@@ -494,6 +694,7 @@
 		};
 		F187BEFE1EB9AEAB00BCFF51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C868035C2424B0DA19159976 /* Pods-SwiftTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 84VQ69YVDT;
@@ -582,6 +783,7 @@
 				F187BEFE1EB9AEAB00BCFF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F187BEFF1EB9AEAB00BCFF51 /* Build configuration list for PBXNativeTarget "SwiftToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +792,7 @@
 				F187BF011EB9AEAB00BCFF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F187BF021EB9AEAB00BCFF51 /* Build configuration list for PBXNativeTarget "SwiftToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +801,7 @@
 				F187BF041EB9AEAB00BCFF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
