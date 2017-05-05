@@ -103,7 +103,6 @@ extension ViewController {
         }
         // 2.通过命名空间和类名转换成类
         let cls : AnyClass? = NSClassFromString((clsName as! String) + "." + childControllerName)
-        
         // swift 中通过Class创建一个对象,必须告诉系统Class的类型
         guard let clsType = cls as? UIViewController.Type else {
             print("无法转换成UIViewController")
@@ -111,7 +110,6 @@ extension ViewController {
         }
         // 3.通过Class创建对象
         let childController = clsType.init()
-        
         return childController
     }
 }

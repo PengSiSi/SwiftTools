@@ -27,5 +27,18 @@ class FrameViewController: BaseViewController {
         // 5. 获取随机颜色
         view.backgroundColor = UIColor.randomColor()
         
+        // 设置圆角
+//        setViewBorder(myView2, borderWidth: 1, borderColor: UIColor.red, cornerRadius: 5)
+        CommonTool.setViewBorder(myView2, borderWidth: 2, borderColor: UIColor.green, cornerRadius: 2)
+        
+        // 计算文字的高度  161.103515625
+        let textHeight = CommonTool.getLabelTextRectSize(text: "思思就动脑筋呢今年放你飞机份额金额呢减肥呢减肥呢积分思思就动脑筋呢今年放你飞机份额金额呢减肥呢减肥呢积分", font: UIFont.systemFont(ofSize: 15), size: CGSize(width: 100, height: 99999))
+        print(textHeight)
+        
+        // 当前日期
+        let date: NSDate = NSDate()
+        // 当前日期转String
+        let str = date.toDasteString(formatString: "yyyy-MM-dd", timezone: .current, localeIdentifier: "en")
+        print("date = \(date) dateStr = \(str)")
     }
 }

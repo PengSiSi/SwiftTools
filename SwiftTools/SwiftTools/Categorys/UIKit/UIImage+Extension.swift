@@ -11,6 +11,11 @@ import UIKit
 
 extension UIImage {
     
+    
+    /// 通过颜色生成image图片
+    ///
+    /// - Parameter color: 颜色值
+    /// - Returns: 生成的UIImage图片
     static func imageWithColor(color:UIColor) -> UIImage{
         let rect = CGRect.init(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
