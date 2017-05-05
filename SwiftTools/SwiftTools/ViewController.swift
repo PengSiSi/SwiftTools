@@ -20,6 +20,10 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         navigationItem.title = "SwiftDemo"
         configureData()
         setupTableView()
+        
+        // 获取当前程序名称
+        let appDisplayName: String = AppInfoTool.appDisplayName!
+        print(appDisplayName)  // SwiftTools
    }
     
     func configureData() {
